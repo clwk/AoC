@@ -9,12 +9,12 @@ public class Day__DD__
         _input = input;
     }
 
-    public int RunStar1()
+    public int RunPart1()
     {
         return 0;
     }
 
-    public int RunStar2()
+    public int RunPart2()
     {
         return 0;
     }
