@@ -32,7 +32,7 @@ public class Day01(string[] input)
     {
         // Write class name and method name to console dynamically
         Console.WriteLine(
-            $"{this.GetType().Name} {System.Reflection.MethodBase.GetCurrentMethod().Name}"
+            $"{this.GetType().Name} {System.Reflection.MethodBase.GetCurrentMethod()?.Name}"
         );
         var inputTransformed = ReplaceStringDigits(input);
 

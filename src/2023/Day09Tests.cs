@@ -28,9 +28,9 @@ public class Day09Test
         var day09 = new Day09(input);
 
         // Act
-        // var result = day09.RunB();
+        var result = day09.RunB();
 
         // Assert
-        // Assert.Equal(expectedResult, result); 
+        Assert.Equal(expectedResult, result);
     }
 }
