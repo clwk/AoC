@@ -9,6 +9,7 @@
     <ItemGroup>
       <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
       <PackageReference Include="Meziantou.Extensions.Logging.Xunit" Version="1.0.8" />
+      <PackageReference Include="MoreLinq" Version="4.3.0" />
     </ItemGroup>
 
 </Project>
