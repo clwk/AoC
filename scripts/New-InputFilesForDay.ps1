@@ -28,7 +28,7 @@ function New-InputFilesForDay {
     # Add the Cookie to the Web Session
     $webSession.Cookies.Add($cookie)
 
-    $day2Digits = Get-Date -UFormat "%d"
+    $day2Digits = Get-Date -Day $Day -UFormat "%d"
     # Download my input
     $outfile = "$PSScriptRoot\..\tests\Aoc$Year.Tests\Inputs\Day$day2Digits.input.txt"
     Write-Verbose "Fetching personal input $outfile from $personalInputUri"

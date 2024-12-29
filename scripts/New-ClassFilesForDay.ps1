@@ -20,7 +20,7 @@ function New-ClassFilesForDay {
         $ErrorActionPreference = "Stop"
 
         # Get the current day number
-        $dayNumber = Get-Date -UFormat "%d"
+        $dayNumber = Get-Date -Day $Day -UFormat "%d"
 
         # Read the content of the file
         $content = Get-Content -Path $FullName
