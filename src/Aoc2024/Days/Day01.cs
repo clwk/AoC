@@ -1,12 +1,16 @@
+using Microsoft.Extensions.Logging;
+
 namespace Aoc2024.Days;
 
 public class Day01
 {
+    private readonly ILogger _logger;
     private readonly List<int> _list1;
     private readonly List<int> _list2;
 
-    public Day01(string[] input)
+    public Day01(string[] input, ILogger logger)
     {
+        _logger = logger;
         var parsedLines = ParseLines(input);
 
         _list1 = parsedLines.Select(tuple => tuple.Item1).OrderBy(x => x).ToList();

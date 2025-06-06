@@ -1,13 +1,17 @@
+using Microsoft.Extensions.Logging;
+
 namespace Aoc2024.Days;
 
 public class Day05
 {
+    private readonly ILogger _logger;
     private readonly string[] _input;
     private readonly Dictionary<int, HashSet<int>> _beforeListByAfter;
     private readonly List<List<int>> _updatePageNumbers;
 
-    public Day05(string[] input)
+    public Day05(string[] input, ILogger logger)
     {
+        _logger = logger;
         _input = input;
 
         // Find the index of the empty line that splits the input

@@ -1,9 +1,12 @@
 using Aoc2024.Days;
+using Xunit.Abstractions;
 
 namespace Aoc2024.Tests.Days;
 
-public class Day02Tests
+public class Day02Tests : DayTestBase
 {
+    public Day02Tests(ITestOutputHelper testOutputHelper)
+        : base(testOutputHelper) { }
     [Theory]
     [InlineData("Day02.example.input.txt", 2)]
     [InlineData("Day02.input.txt", 432)]
@@ -11,7 +14,7 @@ public class Day02Tests
     {
         // Arrange
         var input = File.ReadAllLines(inputFilename);
-        var day02 = new Day02(input);
+        var day02 = new Day02(input, Logger);
 
         // Act
         var result = day02.RunPart1();
@@ -27,7 +30,7 @@ public class Day02Tests
     {
         // Arrange
         var input = File.ReadAllLines(inputFilename);
-        var day02 = new Day02(input);
+        var day02 = new Day02(input, Logger);
 
         // Act
         var result = day02.RunPart2();

@@ -1,11 +1,15 @@
+using Microsoft.Extensions.Logging;
+
 namespace Aoc2024.Days;
 
 public class Day02
 {
+    private readonly ILogger _logger;
     private readonly List<List<int>> _allReports;
 
-    public Day02(string[] input)
+    public Day02(string[] input, ILogger logger)
     {
+        _logger = logger;
         _allReports = input.Select(ParseReport).ToList();
     }
 

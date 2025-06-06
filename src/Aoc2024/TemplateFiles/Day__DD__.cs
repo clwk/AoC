@@ -9,17 +9,19 @@ public class Day__DD__
 
     public Day__DD__(string[] input, ILogger logger)
     {
-        _input = input;
         _logger = logger;
+        _input = input;
     }
 
     public int RunPart1()
     {
-        return 0;
+        // TODO: Implement part 1 solution
+        throw new NotImplementedException();
     }
 
     public int RunPart2()
     {
-        return 0;
+        // TODO: Implement part 2 solution  
+        throw new NotImplementedException();
     }
 }
